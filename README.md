@@ -97,7 +97,7 @@ Main idea: when dice is 1 current player becomes inactive and the other active
 * _HTML_
 * _CSS_
 * _Bootstrap_
-* _JavaScript_
+* _Vanilla JavaScript_
 * _jQuery_
 
 ### License
