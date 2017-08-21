@@ -4,7 +4,7 @@
 
 # _Pig Dice Game_
 
-#### By _Heggy Castneda_
+#### By _Heggy Castaneda_
 
 ## Description
 
@@ -35,7 +35,7 @@ _This web application allows two players to play a game of Pig Dice._
 
 ## Notes
 
-# Version 1
+## Version 1
 
 - Algorithm: Create randomly generated dice number  (done)
 - console.log(dice) to check if dice no is generating 1 thru 6 (done)
@@ -43,7 +43,7 @@ _This web application allows two players to play a game of Pig Dice._
 - hide the dice picture (done)
 - Switch to player 1 and set player 1 to have dice number as current score (done)
 
-# Version 2
+## Version 2
 - unhide dice picture (done)
 - Set up an event Handler (done)
 - Assign an anonymous callback function as a handler (done)
@@ -66,7 +66,7 @@ Lesson on: Document.getElementbyID
 Hint: event
 Move document.querySelector('#current-' + activePlayer).textContent = dice; inside of the eventHandler
 
-# Version 3
+## Version 3
 Main activity for version 3: 1. update dice img when Roll Dice with new dice number, 2. reset at pg refresh
 
 -  create css element img src="images/dice-x.png" class ="dice" in JS (done)
@@ -86,7 +86,7 @@ document.querySelector('.dice').style.display = 'none';
 // Add style.display line first line in Eventhandler function
 document.querySelector('.dice').style.display = 'block';
 
-# Version 4
+## Version 4
 Main idea: when dice is 1 current player becomes inactive and the other active
 - when dice rolls 1 
 
@@ -104,4 +104,4 @@ Main idea: when dice is 1 current player becomes inactive and the other active
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2017 **_Heggy Castneda_**
+Copyright (c) 2017 **_Heggy Castaneda_**
