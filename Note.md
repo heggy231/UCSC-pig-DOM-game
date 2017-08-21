@@ -39,3 +39,29 @@ document.querySelector('.dice').src = 'images/dice-' + dice + '.png';
 document.getElementById('score-0').textContent = '0';
 document.getElementById('score-0').textContent = 'heggy'
 
+# Version 4:
+
+- Only if dice is NOT equal to 1; keep adding score inside activePlayer
+if(dice !== 1) {
+  scores[activePlayer] += dice;
+  // update UI for scores in player 1 total score
+  document.querySelector('#current-' + activePlayer).textContent = dice;
+
+} else {
+  
+}
+
+move this logic inside event handler
+
+- toggle activePlayers from 0 > 1 or 1 > 0 using if/else:
+adding active player functionality use toggle 
+if activePlayer = 1 > make it 0
+if activePlayer = 0 > make it 1
+
+    if(activePlayer === 0) {
+      activePlayer = 1;
+    } else {
+      activePlayer = 0;
+    }
+
+  

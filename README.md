@@ -88,7 +88,9 @@ document.querySelector('.dice').style.display = 'block';
 
 ## Version 4
 Main idea: when dice is 1 current player becomes inactive and the other active
-- when dice rolls 1 
+- Only if dice is NOT equal to 1; keep adding score inside activePlayer (done)
+- Toggle active player using if/else (done)
+- Refactor Toggle active player using if/else => ternary operator
 
 
 
@@ -97,7 +99,7 @@ Main idea: when dice is 1 current player becomes inactive and the other active
 * _HTML_
 * _CSS_
 * _Bootstrap_
-* _Vanilla JavaScript_
+* _Vanilla JavaScript ES6_
 * _jQuery_
 
 ### License
