@@ -28,10 +28,14 @@ https://www.codecademy.com/en/forum_questions/555fd11c9113cbf0910006e3
 
 
 # Version 3: 
-- Play inside of console to display right dice
+- Play inside of console to display right dice images
 document.querySelector('.dice').src = 'images/dice-4.png';
 
-- Grab total score element and change its content
+//  create css element img src="images/dice-5.png" class ="dice"
+document.querySelector('.dice').src = 'images/dice-' + dice + '.png';
+
+- Grab total score, current scores elements reset them to 0 when onload
 // grab the total score of activePlayer = 0 and reset to 0
 document.getElementById('score-0').textContent = '0';
 document.getElementById('score-0').textContent = 'heggy'
+

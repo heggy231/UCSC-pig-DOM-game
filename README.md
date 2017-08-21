@@ -40,10 +40,19 @@ Hint: event
 Move document.querySelector('#current-' + activePlayer).textContent = dice; inside of the eventHandler
 
 # Version 3
--  create css element img src="images/dice-x.png" class ="dice" in JS
+-  create css element img src="images/dice-x.png" class ="dice" in JS (done)
 How to manipulate the source property of the image
 remember that dice is dynamically generated.
   //  create css element img src="images/dice-5.png" class ="dice"
 document.querySelector('.dice').src = 'images/dice-' + dice + '.png';
 
-- 
+- At refresh, Reset the total score and current score element to 0 (done)
+// ex for score-0
+document.getElementById('score-0').textContent = '0';
+
+- At refresh, dice img should be hidden (done)
+document.querySelector('.dice').style.display = 'none';
+
+- Fix a bug, now dice is no longer visible when you roll dice.  When roll dice, dice img should be displayed. (done)
+// Add style.display line first line in Eventhandler function
+document.querySelector('.dice').style.display = 'block';

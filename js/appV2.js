@@ -50,4 +50,4 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
   dice = Math.floor(Math.random() * 6) + 1;
   document.querySelector('#current-' + activePlayer).textContent = dice;
   console.log(dice); // no of current roll of dice
-})
+});
