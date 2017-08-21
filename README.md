@@ -39,4 +39,11 @@ Lesson on: Document.getElementbyID
 Hint: event
 Move document.querySelector('#current-' + activePlayer).textContent = dice; inside of the eventHandler
 
-- How to maniputlate the source property of the image
+# Version 3
+-  create css element img src="images/dice-x.png" class ="dice" in JS
+How to manipulate the source property of the image
+remember that dice is dynamically generated.
+  //  create css element img src="images/dice-5.png" class ="dice"
+document.querySelector('.dice').src = 'images/dice-' + dice + '.png';
+
+- 
