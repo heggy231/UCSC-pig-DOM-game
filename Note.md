@@ -64,4 +64,35 @@ if activePlayer = 0 > make it 1
       activePlayer = 0;
     }
 
-  
+- refactor if/else to ternary operator
+    // switch activePlayer: toggle > if it is 0 then make it 1
+    //                               if it is 1 then manke it 0
+    // if(activePlayer === 0) {
+    //   activePlayer = 1;
+    // } else {
+    //   activePlayer = 0;
+    // }
+
+    // ternary operator convert
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; 
+
+- Understanding .classList
+// to view all the class applied to '.player-0-panel' class
+document.querySelector('.player-0-panel').classList
+// output:  ["player-0-panel", "active", value: "player-0-panel active"]
+//           class: "player-0-panel" and class: "active"
+
+- learn to remove/add css class using .classList.add or .classList.remove
+// to view all the class applied to '.player-0-panel' class
+document.querySelector('.player-0-panel').classList
+// output: ["player-0-panel", "active", value: "player-0-panel active"]
+
+// try adding active class to .player-1-panel
+// first, lets see what classes are applied to .player-1-panel class
+document.querySelector('.player-1-panel').classList
+// output: ["player-1-panel", value: "player-1-panel"]
+// lastly, add 'active' class
+document.querySelector('.player-1-panel').classList.add('active');
+
+// remove the active from '.player-0-panel'
+document.querySelector('.player-0-panel').classList.remove('active');

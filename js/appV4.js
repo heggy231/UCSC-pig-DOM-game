@@ -20,18 +20,15 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
   // dice is 1 then #current-0or1 resets to zero, switch to nextPlayer
   } else {
     document.querySelector('#current-' + activePlayer).textContent = 0;
-    // switch activePlayer: toggle > if it is 0 then make it 1
-    //                               if it is 1 then manke it 0
-    if(activePlayer === 0) {
-      activePlayer = 1;
-    } else {
-      activePlayer = 0;
-    }
-    
+    // switch activePlayer: toggle > if it is 0 then make activePlayer 1
+    //                               if it is 1 then manke activePlayer 0
+    activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+    // Toggle the CSS classes .active such that class= 'player-x-panel active'
+    // first remove 'player-0-panel active' 
+    // to add class use .classList which grabs all the classes the element has
+    document.querySelector('.player-0-panel').classList.remove('active');
+    document.querySelector('.player-' + activePlayer + 'panel').
   }
-
-
-
 
 });
 

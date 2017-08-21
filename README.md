@@ -90,8 +90,12 @@ document.querySelector('.dice').style.display = 'block';
 Main idea: when dice is 1 current player becomes inactive and the other active
 - Only if dice is NOT equal to 1; keep adding score inside activePlayer (done)
 - Toggle active player using if/else (done)
-- Refactor Toggle active player using if/else => ternary operator
-
+- Refactor Toggle active player using if/else => ternary operator (done)
+- Test out if toggle is working. (done)
+- Update UI for active player's CSS class toggling.
+  [ ] red button by Player x should move to activePlayer column
+  [ ] highlight Text for activePlayer text
+  [ ] Grey background move to activePlayer column
 
 
 ## Technologies Used
