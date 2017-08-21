@@ -20,5 +20,23 @@ pig game lesson on DOM
 - unhide dice picture
 - Set up an event Handler
 - Assign an anonymous callback function as a handler
-- document.getElementbyID
+
+// select RollDice button class
+// when clicked console log I'm clicked
+// document.querySelector('.btn-roll').addEventListener('click', function() {
+//   console.log('I\'m clicked!');
+// })
+
+- pass in myHandler function as a handler (done)
+- log out dice number when clicked in handler
+simply moved dice = Math.floor(Math.random() * 6) + 1; inside of handler
+- Set the player 1,2 current score to 0
+set dice = 0
+document.querySelector('#current-' + activePlayer).textContent = dice;
+
+- Update activePlayer 0 score with new dice roll number when click on Roll Dice
+Lesson on: Document.getElementbyID
+Hint: event
+Move document.querySelector('#current-' + activePlayer).textContent = dice; inside of the eventHandler
+
 - How to maniputlate the source property of the image
